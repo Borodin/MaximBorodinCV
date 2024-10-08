@@ -1,0 +1,249 @@
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[letterpaper,9pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage{soul}
+\usepackage{tikz}
+\usepackage{svg}
+\usepackage{etoolbox}
+\usepackage{bookmark}
+\usepackage{twemojis}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[russian,english]{babel}
+\usepackage{CJKutf8}
+\usepackage{pbox}
+\usepackage{arabtex}
+\usepackage{utf8}
+\setcode{utf8}
+
+\input{glyphtounicode}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\hypersetup{
+    pdfauthor={Maxim Borodin},
+    pdftitle={Resume — Maxim Borodin},
+    pdfsubject={Resume},
+    pdfkeywords={CV, Resume, Document, LaTeX, Maxim Borodin},
+    pdfproducer={LaTeX},
+    pdfcreator={MathshubCVBot},
+    hidelinks
+}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{0.8in}
+\setlength{\footskip}{30pt}
+
+\setstretch{0.8}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash\hspace{0pt}}p{#1}}
+
+
+\newcommand{\resumeItem}[1]{
+    \item\small{
+            {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabularx}{0.75\textwidth}{L{0.72\textwidth} R{0.25\textwidth}}
+    \textbf{#1}       & \textit{#2} \\
+    \textit{\small#3} & \textit{\small #4} \\
+    \end{tabularx}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabularx}{0.97\textwidth}{Xr}
+    \small#1 & \hspace{10pt} \small#2 \\
+    \end{tabularx}\vspace{-7pt}
+}
+
+\newcommand{\resumeEducationHeading}[5]{
+    \item
+    \begin{tabularx}{\textwidth}{L{0.72\textwidth} R{0.25\textwidth}}
+    \textbf{#1} & \textit{#3} \\
+    \ifstrempty{#2}{\ifstrempty{#5}{}{#5}}{\textit{#2}} & \textit{#4}
+    \end{tabularx}
+    \ifstrempty{#2}{}{\noindent\parbox[t]{0.95\textwidth}{\raggedright\ifstrempty{#5}{}{#5}}}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\begin{document}
+
+\begin{center}
+\textbf{\huge \scshape Максим Бородин} \\ \vspace{1pt}
+\small +79670761743 $|$ \href{mailto:hi@maximborodin.ru}{\ul{hi@maximborodin.ru}} $|$ \href{https://github.com/borodim}{\ul{github.com/borodim}}
+\end{center}
+
+\section{Обо мне}
+Более 10 лет работал в студии, создавая решения для бизнес-задач в сфере AR/VR. Последний год более глубоко погрузился в проектную разработку, чтобы актуализировать знания и освоить интересные для себя технологии. В резюме представлены в основном личные проекты, чтобы сделать акцент на технологиях и навыках, а не на решенных бизнес-задачах клиентов студии.
+
+\section{Образование}
+\resumeSubHeadingListStart
+\resumeEducationHeading
+{Школа Разработки Интерфейсов Яндекса}
+{Очный курс в стенах Яндекса}
+{Москва, Россия}
+{2014 -- 2015}
+{Работал в команде над курсовым проектом — онлайн чатом с Андреем Бережным в качестве ментора.}
+\resumeEducationHeading
+{Российский экономический университет имени Г.В. Плеханова}
+{Кафедра Автоматизированных систем обработки информации и управления}
+{Москва, Россия}
+{1 сент. 2010 -- 30 июн. 2014}
+{}
+\resumeSubHeadingListEnd
+
+\section{Опыт работы}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Студия Tour-360.ru}{2014 -- 2023}
+{Сооснователь}{Москва, Россия}
+
+\resumeItemListStart
+\resumeItem{Занимался полным циклом работы над проектами в сфере VR/AR решений для бизнеса: Поиск клиентов, продажи, разработка уникального решения для закрытия задач клиента, организация съемок, разработка, поддержка, работа с документами}
+\resumeItem{Среди клиентов были: Лукойл, ВШЭ, Партия ЛДПР, Аэропорт Шереметьево, Парк Патриот, ММОМА, Музей Москвы, 1shot, ДоДо, AVILON, Lacoste, Международная выставка форум "Россия" и многие другие.}
+\resumeItemListEnd
+
+\resumeSubheading
+{ООО Эвент Платформа}{апр. 2016  -- июнь 2016 }
+{Front-end разработчик}{Москва, Россия}
+
+\resumeItemListStart
+\resumeItem{Разрабатывал мобильные приложения под iOS и Android на Web технологиях для таких компаний как Пятерочка, Дикси, Сибур, Сбер}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Проекты}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Telegram бот для создания анимированных заголовков @EmojiTitleBot} {$|$ \emph{Telegram Bot API, Canvas, ffmpeg, PostgreSQL}}}{2024}
+
+\resumeItemListStart
+\resumeItem{Создал бота, позволяющего пользователям генерировать анимированные заголовки из кастомных эмодзи, что делает сообщения заметнее и выразительнее.}
+\resumeItem{Обеспечил виральное распространение бота без вложений в рекламу за счет генерации и публикации пользовательского контента.}
+\resumeItem{Проект получил награду «Проект месяца \#1» на Product Radar — российском аналоге Product Hunt.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{AI Telegram бот для создания резюме} {$|$ \emph{Telegram Bot API, k8s, OpenAI API, PostgreSQL, latex}}}{2024}
+
+\resumeItemListStart
+\resumeItem{Разработал чат-бота, который в формате диалога помогает пользователям создать эффективное резюме, упрощая процесс поиска работы.}
+\resumeItem{После листинга бота в каталогах удалось привлеч более 30K пользователей.}
+\resumeItem{В качестве демонстрации работы бота @MathshubCVBot, создал с его помощью это резюме.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{NPM пакет typescript-telegram-bot-api} {$|$ \emph{npm, Telegram Bot API, jest, CI/CD}}}{2024}
+
+\resumeItemListStart
+\resumeItem{Разработал актуальный TypeScript NPM пакет для Telegram Bot API, покрывающий все типы, что упрощает разработку ботов и повышает качество кода.}
+\resumeItem{Обеспечил 100\% покрытие тестами с использованием Jest, гарантируя надежность и стабильность пакета.}
+\resumeItem{Пакет получил официальное признание и упоминание на сайте Telegram: https://core.telegram.org/bots/samples\#typescript, подтверждая его ценность для сообщества разработчиков.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Telegram Mini App для AI Таро-раскладов} {$|$ \emph{Telegram Mini App, PostgreSQL, Open AI, эквайринг, Grafana}}}{2023}
+
+\resumeItemListStart
+\resumeItem{Создал бота, который генерирует и интерпретирует таро-расклады в мини-приложении и голосовыми сообщениями, делая услуги таролога доступными широкому кругу пользователей.}
+\resumeItem{Занимался поиском и привлечением мотивированного и платежеспособного трафика, что позволило вывести бота на самоокупаемость.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Нейронная сеть восстановления глубины} {$|$ \emph{PyTorch, NumPy, CUDA in Docker, Big data}}}{2023}
+
+\resumeItemListStart
+\resumeItem{В рамках работы в Tour-360.ru разработал проект для восстановления глубины из одного моноракурсного эквидистантного снимка с 360 камеры, улучшая качество и опыт взаимодейтвия с виртуальными турами.}
+\resumeItem{Создал нейронную сеть, которая позволяет получать 3D-модель помещения по нескольким снимкам, являясь аналогом Cortex AI от Matterport.}
+\resumeItem{Организовал сбор и подготовку датасета из 1 миллиона изображений (Depth/RGB/normals), провел тренировку модели на нескольких графических ускорителях NVIDIA и настроил пайплайн для полной автоматизации процесса для каждого проекта.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Чат-рулетка на WebRTC} {$|$ \emph{WebRTC}}}{2015}
+
+\resumeItemListStart
+\resumeItem{В качестве выпускного проекта в Школе разработки интерфейсов Яндекса разработал «чат-рулетку» с использованием WebRTC, предоставив платформу для случайных видеочатов.}
+\resumeItem{Реализовал полный цикл разработки с клиентской и серверной частью, а также настроил CI/CD, демонстрируя навыки в DevOps и обеспечивая стабильность приложения.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{JavaScript версия арканоида D-XBall} {$|$ \emph{HTML5, Canvas, Web Audio}}}{2012}
+
+\resumeItemListStart
+\resumeItem{Провел реверс-инжиниринг классической игры D-XBall и создал ее веб-версию на JavaScript, сохранив оригинальный геймплей и делая игру доступной в браузере.}
+\resumeItem{Сайт успешно функционирует с 2012 года, привлекая 500 DAU.}
+\resumeItem{Поделился своим опытом в статье на Хабре: https://habr.com/ru/articles/147339/, получив поддержку аудитории}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Навыки}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Программирование}{: Node.js, TypeScript, Python, GLSL, C++, bash}}}
+\small{\item{
+\textbf{Инструменты и технологии}{: Kubernetes, Docker, Git, CI/CD, React, CSS/HTML}}}
+\small{\item{
+\textbf{Аналитика и данные}{: Grafana, SQL, PostgreSQL, NocoDB, Matplotlib, Big Data}}}
+\small{\item{
+\textbf{3D}{: Three.js, Blender 3D, SketchUp, Моделирование}}}
+\small{\item{
+\textbf{Мягкие навыки}{: Поиск клиентов, Опыт ведения переговоров и понимание потребностей клиентов, Управление полным циклом проекта от идеи до реализации. Управление документооборотом и бюджетом. Навык деловой переписки, подготовка презентаций, приоретизация задач, Способность к быстрому обучению и адаптации к новым технологиям.}}}
+\end{itemize}
+
+\end{document}

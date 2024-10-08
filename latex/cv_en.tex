@@ -1,0 +1,248 @@
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[letterpaper,9pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage{soul}
+\usepackage{tikz}
+\usepackage{svg}
+\usepackage{etoolbox}
+\usepackage{bookmark}
+\usepackage{twemojis}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[russian,english]{babel}
+\usepackage{CJKutf8}
+\usepackage{pbox}
+\usepackage{arabtex}
+\usepackage{utf8}
+\setcode{utf8}
+
+\input{glyphtounicode}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+\hypersetup{
+    pdfauthor={Maxim Borodin},
+    pdftitle={Resume — Maxim Borodin},
+    pdfsubject={Resume},
+    pdfkeywords={CV, Resume, Document, LaTeX, Maxim Borodin},
+    pdfproducer={LaTeX},
+    pdfcreator={MathshubCVBot},
+    hidelinks
+}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{0.8in}
+\setlength{\footskip}{30pt}
+
+\setstretch{0.8}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash\hspace{0pt}}p{#1}}
+
+
+\newcommand{\resumeItem}[1]{
+    \item\small{
+            {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabularx}{0.75\textwidth}{L{0.72\textwidth} R{0.25\textwidth}}
+    \textbf{#1}       & \textit{#2} \\
+    \textit{\small#3} & \textit{\small #4} \\
+    \end{tabularx}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabularx}{0.97\textwidth}{Xr}
+    \small#1 & \hspace{10pt} \small#2 \\
+    \end{tabularx}\vspace{-7pt}
+}
+
+\newcommand{\resumeEducationHeading}[5]{
+    \item
+    \begin{tabularx}{\textwidth}{L{0.72\textwidth} R{0.25\textwidth}}
+    \textbf{#1} & \textit{#3} \\
+    \ifstrempty{#2}{\ifstrempty{#5}{}{#5}}{\textit{#2}} & \textit{#4}
+    \end{tabularx}
+    \ifstrempty{#2}{}{\noindent\parbox[t]{0.95\textwidth}{\raggedright\ifstrempty{#5}{}{#5}}}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+\begin{center}
+\textbf{\huge \scshape Maxim Borodin} \\ \vspace{1pt}
+\small +79670761743 $|$ \href{mailto:hi@maximborodin.ru}{\ul{hi@maximborodin.ru}} $|$ \href{https://github.com/borodim}{\ul{github.com/borodim}}
+\end{center}
+
+\section{About Me}
+Over 10 years working in a studio, creating solutions for business challenges in the AR/VR field. The past year has been devoted to deeper project development to update my skills and learn new technologies of interest to me. This resume primarily presents personal projects to emphasize the technologies and skills rather than the business solutions provided to studio clients.
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeEducationHeading
+{Yandex School of Interface Development}
+{Full-time course at Yandex}
+{Moscow, Russia}
+{2014 -- 2015}
+{Worked in a team on a course project — an online chat with Andrey Berezny as the mentor.}
+\resumeEducationHeading
+{Russian University of Economics named after G.V. Plekhanov}
+{Department of Automated Information Processing Systems and Management}
+{Moscow, Russia}
+{Sep 1, 2010 -- Jun 30, 2014}
+{}
+\resumeSubHeadingListEnd
+
+\section{Work Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Tour-360.ru Studio}{2014 -- 2023}
+{Co-founder}{Moscow, Russia}
+
+\resumeItemListStart
+\resumeItem{Managed the full cycle of VR/AR solutions for business: Client outreach, sales, development of unique solutions for client needs, organization of shootings, development, support, document management}
+\resumeItem{Clients included: Lukoil, HSE University, LDPR Party, Sheremetyevo Airport, Patriot Park, MMOMA, Museum of Moscow, 1shot, Dodo, AVILON, Lacoste, the international exhibition forum "Russia", and many others.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Event Platform LLC}{Apr 2016  -- June 2016}
+{Front-end Developer}{Moscow, Russia}
+
+\resumeItemListStart
+\resumeItem{Developed mobile applications for iOS and Android using web technologies for companies like Pyaterochka, Dixy, Sibur, Sberbank.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Telegram bot for creating animated titles @EmojiTitleBot} {$|$ \emph{Telegram Bot API, Canvas, ffmpeg, PostgreSQL}}}{2024}
+
+\resumeItemListStart
+\resumeItem{Developed a bot that allows users to generate animated titles from custom emojis, making messages more noticeable and expressive.}
+\resumeItem{Facilitated the viral spread of the bot without investment in advertising through the generation and publication of user content.}
+\resumeItem{The project won the «Project of the Month \#1» award on Product Radar — a Russian analog of Product Hunt.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{AI Telegram bot for creating resumes} {$|$ \emph{Telegram Bot API, k8s, OpenAI API, PostgreSQL, latex}}}{2024}
+
+\resumeItemListStart
+\resumeItem{Developed a chat-bot that helps users create effective resumes in a dialogue format, simplifying the job search process.}
+\resumeItem{After listing the bot in directories, attracted over 30K users.}
+\resumeItem{As a demonstration of the bot's capabilities, this resume was created using @MathshubCVBot.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{NPM package typescript-telegram-bot-api} {$|$ \emph{npm, Telegram Bot API, jest, CI/CD}}}{2024}
+
+\resumeItemListStart
+\resumeItem{Developed a TypeScript NPM package for the Telegram Bot API, covering all types, which simplifies the development of bots and improves code quality.}
+\resumeItem{Ensured 100\% test coverage using Jest, guaranteeing the reliability and stability of the package.}
+\resumeItem{The package received official recognition and mention on the Telegram website: https://core.telegram.org/bots/samples\#typescript, confirming its value to the developer community.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Telegram Mini App for AI Tarot Readings} {$|$ \emph{Telegram Mini App, PostgreSQL, Open AI, acquiring, Grafana}}}{2023}
+
+\resumeItemListStart
+\resumeItem{Created a bot that generates and interprets tarot spreads in a mini-app and voice messages, making tarot services accessible to a broad audience.}
+\resumeItem{Handled the search and attraction of motivated and paying traffic, leading to the bot's self-sustainability.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Neural Network for Depth Reconstruction} {$|$ \emph{PyTorch, NumPy, CUDA in Docker, Big Data}}}{2023}
+
+\resumeItemListStart
+\resumeItem{Developed a project for depth reconstruction from a single monoscopic equirectangular image with a 360 camera at Tour-360.ru, improving the quality and experience of interacting with virtual tours.}
+\resumeItem{Created a neural network that allows obtaining a 3D model of the environment from several shots, serving as an analog to Cortex AI by Matterport.}
+\resumeItem{Organized the collection and preparation of a dataset from 1 million images (Depth/RGB/normals), conducted model training on several NVIDIA graphics accelerators, and set up a pipeline for full automation of the process for each project.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Chat Roulette on WebRTC} {$|$ \emph{WebRTC}}}{2015}
+
+\resumeItemListStart
+\resumeItem{As a graduation project at Yandex School of Interface Development, developed "chat roulette" using WebRTC, providing a platform for random video chats.}
+\resumeItem{Implemented the full cycle of development with client and server parts, as well as set up CI/CD, demonstrating skills in DevOps and ensuring application stability.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{JavaScript version of the game D-XBall} {$|$ \emph{HTML5, Canvas, Web Audio}}}{2012}
+
+\resumeItemListStart
+\resumeItem{Performed reverse engineering of the classic game D-XBall and created its web version in JavaScript, preserving the original gameplay and making the game accessible in the browser.}
+\resumeItem{The site has been successfully operating since 2012, attracting 500 DAU.}
+\resumeItem{Shared my experience in an article on Habr: https://habr.com/ru/articles/147339/, receiving audience support.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Programming}{: Node.js, TypeScript, Python, GLSL, C++, bash}}}
+\small{\item{
+\textbf{Tools and Technologies}{: Kubernetes, Docker, Git, CI/CD, React, CSS/HTML}}}
+\small{\item{
+\textbf{Analytics and Data}{: Grafana, SQL, PostgreSQL, NocoDB, Matplotlib, Big Data}}}
+\small{\item{
+\textbf{3D}{: Three.js, Blender 3D, SketchUp, Modeling}}}
+\small{\item{
+\textbf{Soft Skills}{: Client acquisition, Experience in negotiations and understanding client needs, Managing the full project cycle from idea to realization. Document management and budgeting. Business correspondence skills, presentation preparation, task prioritization, Ability to quickly learn and adapt to new technologies.}}}
+\end{itemize}
+
+\end{document}
